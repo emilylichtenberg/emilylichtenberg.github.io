@@ -22,31 +22,32 @@
     </script>
 	</head>
 	<body class="is-preload">
-
+		
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			
+			<!-- Header -->
+			<header id="header">
+				<!-- <div class="logo">
+					<span class="icon fa-star"></span>
+				</div> -->
+				<div class="content">
+					<div class="inner">
+						<h1>Emily Lichtenberg</h1>
+						<p>Software Engineer</p>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<!-- <li><a href="#contact">Contact</a></li> -->
+						<!-- <li><a href="#elements">Elements</a></li> -->
+					</ul>
+				</nav>
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <div class="logo">
-							<span class="icon fa-star"></span>
-						</div> -->
-						<div class="content">
-							<div class="inner">
-								<h1>Emily Lichtenberg</h1>
-								<p>Software Engineer</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">Projects</a></li>
-								<li><a href="#skills">Skills</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!-- <li><a href="#elements">Elements</a></li> -->
-							</ul>
-						</nav>
 					</header>
 
 				<!-- Main -->
@@ -55,34 +56,133 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<!-- <span class="image main profilepic"><img src="images/emily.png" alt="" /></span> -->
+								<span class="image main profilepic"><img src="images/emily.png" alt="" /></span>
 								<p>Hi, I'm Emily Lichtenberg and I'm a software engineer.</p>
 								<p>In college I studied Economics and Transportation Logistics so after graduating I entered a career in Inventory Planning and Operations.  I then moved into a strategy-focused role and quickly realized I missed seeing the execution of a project through to the end and wanted to stay involved with the Software Engineers I worked with.  From there I decided to switch careers and joined App Academy, an intensive four month coding bootcamp.</p>
 								<p>When I'm not coding, I like trying new restaurants in NYC, cheering for the Rangers, and watching all reality TV.</p>
-								<i class="space-after-pin fas fa-map-marker-alt"></i> New York City
-								<br>
-								<i class="fas fa-graduation-cap"></i> Northwestern University; App Academy
-								<br>
-								<i class="space-after-pdf fas fa-file-pdf"></i> <a href="./assets/Stephane Meyering Resume.pdf" target="_blank"> Resume</a>
+								<p>Continue through the site to see the projects I've been working on.</p>
+								<div class="intro-icons">
+									<p id="intro-icon"><i class="space-after-pin fas fa-map-marker-alt"></i><span id="intro-icon-text">New York City</span></p>
+									<p id="intro-icon"><i class="fas fa-graduation-cap"></i><span id="intro-con-text"></span> Northwestern University; App Academy</span></p>
+									<p id="intro-icon"><i class="space-after-pdf fas fa-file-pdf"></i> <a href="./assets/Stephane Meyering Resume.pdf" target="_blank"><span id="intro-icon-text"></span>Resume</span></a></p>
+								</div>
+							</article>
+
+						<!-- Projects -->
+							<article id="projects">
+
+
+								<h2 class="major">mySlack</h2>
+									<span class="image main">
+										<a href="https://my-slack-clone-1.herokuapp.com/#/" target="_blank">
+											<img src="images/slack.png">
+										</a>
+									</span>
+									<p>
+										A full stack single-page Slack clone that allows users to chat in real time.
+									</p>	
+									<ul>
+										<li><i>Backend - Ruby on Rails, PostgreSQL, Action Cable</i></li>
+										<li><i>Frontend - React, Redux</i></li>
+										<li>
+											<a href="https://github.com/emilylichtenberg/MySlack" target="_blank">GitHub</a>
+											<span> | </span>
+											<a href="https://my-slack-clone-1.herokuapp.com/#/" target="_blank">Live</a>
+										</li>
+									</ul>
+
+									<h2 class="major">Music Player</h2>
+									<span class="image main">
+										<a href="https://emilylichtenberg.github.io/pianoplayer/" target="_blank">
+											<img src="images/piano.png">
+										</a>
+									</span>
+									<p>
+										An online musical keyboard for users to create their own masterpiece.
+									</p>	
+									<ul>
+										<li><i>Javascript, Howler.js, HTML, CSS</i></li>
+										<li>
+											<a href="https://github.com/emilylichtenberg/pianoplayer" target="_blank">GitHub</a>
+											<span> | </span>
+											<a href="https://emilylichtenberg.github.io/pianoplayer/" target="_blank">Live</a>
+										</li>
+									</ul>
+
+									<h2 class="major">Unshelvd</h2>
+									<span class="image main">
+										<a href="https://unshelvd-1.herokuapp.com/#/" target="_blank">
+											<img src="images/unshelvd.png">
+										</a>
+									</span>
+									<p>
+										A web app where users can save board games to a library, view friends' libraries, and receive tailored suggestions on what to play next.
+									</p>	
+									<ul>
+										<li><i>Backend - MongoDB, Express, Node</i></li>
+										<li><i>Frontend - React, Redux</i></li>
+										<li>
+											<a href="https://github.com/Bill-the-dev/Unshelvd_MERN" target="_blank">GitHub</a>
+											<span> | </span>
+											<a href="https://unshelvd-1.herokuapp.com/#/" target="_blank">Live</a>
+										</li>
+									</ul>
+
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Hi, I'm Emily Lichtenberg and I'm a software engineer.</p>
-								<p>In college I studied Economics and Transportation Logistics so after graduating I entered a career in Inventory Planning and Operations.</p>
-							</article>
+								<!-- <h2 class="major">Work</h2> -->
+								<h2 id="resume" class="major">Resume</h2>
+								<span class="image main">
+									<a href="./assets/Stephane Meyering Resume.pdf" target="_blank">
+										<img src="images/resume.png" alt="resume">
+									</a>
+								</span>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Maisonette</h2>
+									<p><b>Manager - Planning and Merchandise Operations</b></p>
+									<ul>
+										<li>Built team from scratch, hired three associates with the goal of automating tasks and improving efficiency in Merch division</li>
+										<li>Partnered with Tech division to overhaul product information system reducing time for merchants to upload new product in half while maintaining strong data quality</li>
+										<li>Ran monthly business reviewing with COO and CEO to present proactive growth initiatives, allowing company to achieve sales within 5% of annual goal</li>
+										<li>Responsible for training 12 person buying team on data tools and reporting, empowering them to make data driven decisions</li>
+										<li>Led merchant efforts to redesign company website by restructuring product taxonomy, merging PDP variants, improving SEO value through product description, enabling customer to shop with ease</li>
+									</ul>
+								<h2 class="major">Walmart eCommerce</h2>
+									<p><b>Category Lead - Kids' Furniture</b></p>
+									<ul>
+										<li>Managed team of five Category Specialists; responsible for P&L management of $200M annual business</li>
+										<li>Optimized channel distribution across Owned, DSV and Marketplace assortment which resulted in 900 bps improvement in margin in seven months</li>
+										<li>Created new vertical site experience within Kids’ Room to ensure proper exposure of and navigation to our browse pages; increased cross category shopping resulting in 11% lift in average order value</li>
+									</ul>
+									<p><b>Category Specialist - Dining Furniture</b></p>
+									<ul>
+										<li>Led cross-functional partnership with Supply Chain; developed best practices for forecasting and ordering of import inventory resulting in increased in-stock rates and over $20M in recaptured revenue</li>
+										<li>Established the White Label project through market research and successfully launched 9 new brands with over 2,000 items while co-leading a bi-coastal team of 17 Category Specialists</li>
+										<li>Guided team through planning and execution of Holiday and Tax Time by negotiating vendor promotions, securing marketing support and collaborating with Walmart Stores to ensure a seamless omnichannel experience</li>
+									</ul>
+
+								<h2 class="major">Macy's</h2>
+								<p><b>Omni Merchandise Planner - Women's Coats</b></p>
+								<ul>
+									<li>Created store specific financial plans for 541 Macy’s retail locations</li>
+									<li>Built merchandise assortment based on local climates and demographic trends</li>
+									<li>Developed strategy to grow luxury brand presence throughout Macy’s stores and online</li>
+									<li>Adjusted merchandise flow to ensure product arrival to store locations at the optimal point in every season</li>
+								</ul>
+								<p><b>Omni Inventory Planner - Women's Career Clothing</b></p>
+								<ul>
+									<li>Analyzed forecasted demand, inventory levels, and sell-throughs to manage weekly replenishment orders</li>
+									<li>Added core fashion to replenishment through productivity analysis resulting in higher sales, in-stock, and turn</li>
+									<li>Collaborated with vendors by providing preseason order projections to improve shipping and fill rates</li>
+								</ul>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p> -->
 							</article>
 
 						<!-- Contact -->
-							<article id="contact">
+							<!-- <article id="contact">
 								<h2 class="major">Contact</h2>
 								<form method="post" action="#">
 									<div class="fields">
@@ -103,14 +203,8 @@
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+								</form> -->
+							<!-- </article> -->
 
 						<!-- Skills -->
 						<article id="skills">
@@ -425,7 +519,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<ul class="icons">
+							<li><a href="https://github.com/emilylichtenberg" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/emilylichtenberg/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://angel.co/u/emily-lichtenberg" target="_blank" class="icon brands fa-angellist"><span class="label">Angel List</span></a></li>
+							<li><a href="mailto:erlichtenberg@gmail.com"  target="_blank" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Emily Lichtenberg | <a href="https://github.com/emilylichtenberg/emilylichtenberg.github.io" target="_blank">Github Repo</a></p>
 					</footer>
 
 			</div>

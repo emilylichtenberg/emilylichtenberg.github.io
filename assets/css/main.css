@@ -660,29 +660,34 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-
-		.image:before {
-			pointer-events: none;
-			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
-			border-radius: 4px;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0.5;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		.image img {
-			border-radius: 4px;
-			display: block;
+	
+	.image:before {
+		pointer-events: none;
+		background-image: url("../../images/overlay.png");
+		background-color: rgba(19, 21, 25, 0.5);
+		border-radius: 4px;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+	.image img {
+		border-radius: 4px;
+		display: block;
+		width: 100%;
+		/* margin: 0;
+		padding: 0;
+		height: 500px;
+		border: 1px solid red; */
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 100%;
 		}
 
 			.image.left img, .image.right img {
@@ -719,6 +724,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
+				height: 100%;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -737,6 +743,9 @@ input, select, textarea {
 
 		}
 
+		.profilepic {
+			position: static;
+		}
 /* List */
 
 	ol {
@@ -1175,7 +1184,8 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(50, 72, 117, 0.6), rgba(19, 21, 25, 0.2)), url("../../images/bg.jpg");
+			/* background-image: url("../../images/bg.jpg"); */
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1519,7 +1529,24 @@ input, select, textarea {
 		}
 
 /* Main */
+	.intro-icons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center
+		;
+	}
+	#intro-icon {
+		padding: 0;
+		margin: 0;
+	}
 
+	.space-after-pin {
+		padding-right: 12px;
+	}
+
+	.space-after-pdf {
+		padding-right: 8px;
+	}
 	#main {
 		-moz-flex-grow: 1;
 		-webkit-flex-grow: 1;
