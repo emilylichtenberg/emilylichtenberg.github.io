@@ -737,6 +737,7 @@ input, select, textarea {
 				/* margin-bottom: 2%; */
 		}
 
+
 		.intro-text {
 			margin-bottom: 1rem;
 		}
@@ -1716,4 +1717,9 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		#resume {
+			text-decoration: none;
+			border-bottom: none;
 		}
